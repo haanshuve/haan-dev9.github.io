@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raihan Hanafi</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <style>
+        @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+    </style>
+    <script>
+        function toggleMenu() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        }
+    </script>
+</head>
+
+<body class="font-sans px-5 mb-20">
+    <div class="max-w-7xl m-auto">
+        <nav class="flex justify-between py-4 items-center">
+            <h1 class="font-bold text-2xl tracking-wide">Raihan Hanafi</h1>
+            <button class="md:hidden" onclick="toggleMenu()">
+                <ion-icon name="menu" class="text-3xl"></ion-icon>
+            </button>
+            <ul class="hidden md:flex items-center gap-5 font-semibold">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Kontak Saya</a></li>
+            </ul>
+        </nav>
+        
+        <ul id="mobile-menu" class="hidden flex flex-col gap-3 font-semibold mt-3 bg-white shadow-md p-5 rounded-lg md:hidden">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Kontak Saya</a></li>
+        </ul>
+        
+        <div class="flex flex-col-reverse md:flex-row gap-8 justify-between mt-28 text-center w-fit mx-auto">
+            <div class="w-3/4 mx-auto">
+                <h1 class="text-xl font-semibold">Halo, saya Raihan Hanafi</h1>
+                <p>Saya mahasiswa Politeknik Negeri Batam prodi Teknik Rekayasa Perangkat Lunak yang tertarik dengan IT.</p>
+            </div>
+            <div class="w-40 md:w-52 mx-auto">
+                <img src="raihan.jpg" alt="Profil Raihan Hanafi" class="rounded-full shadow-lg">
+            </div>
+        </div>
+
+        <h1 class="font-semibold bg-yellow-300 px-2 py-1 h-fit text-2xl w-fit whitespace-nowrap mt-32">Project Saya</h1>
+        
+        <div class="grid grid-cols-1 gap-12 mt-10">
+            <div class="border-4 rounded-xl p-8 gap-4 border-blue-500">
+                <h1 class="bg-blue-400 text-lg font-bold p-1 rounded-sm">PBL: Absensi Online.</h1>
+                <p class="mt-2">Aplikasi absensi online yang mempermudah pencatatan kehadiran dengan fitur real-time tracking dan laporan otomatis.</p>
+                <a href="#" class="flex gap-2 items-center mt-4">
+                    <ion-icon name="arrow-dropright-circle" class="text-4xl text-blue-500"></ion-icon>
+                    <span class="font-semibold text-lg">Selengkapnya</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-100 px-6 md:px-12 py-14 rounded-2xl mt-20 text-center md:text-left">
+            <h1 class="text-3xl font-bold">About me</h1>
+            <p>Raihan Hanafi adalah mahasiswa Politeknik Batam, jurusan Rekayasa Perangkat Lunak. Keahlian: <b>HTML, CSS, PHP, Python</b>.</p>
+        </div>
+
+        <h1 class="font-semibold px-2 py-1 h-fit text-2xl w-fit whitespace-nowrap mt-20">Kontak Saya</h1>
+        
+        <div class="bg-black text-white p-8 md:p-16 gap-5 mt-10 rounded-3xl flex justify-between">
+            <div class="flex gap-5">
+                <div class="text-center border-r pr-5">
+                    <ion-icon name="logo-instagram" class="text-yellow-400 text-3xl"></ion-icon>
+                    <p>Instagram</p>
+                </div>
+                <div class="text-center border-r pr-5">
+                    <ion-icon name="logo-linkedin" class="text-yellow-400 text-3xl"></ion-icon>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="text-center">
+                    <ion-icon name="mail" class="text-yellow-400 text-3xl"></ion-icon>
+                    <p>Gmail</p>
+                </div>
+            </div>
+            <p class="italic">"Tertarik bekerja sama atau berbincang tentang teknologi? Jangan ragu menghubungi saya!"</p>
+        </div>
+    </div>
+</body>
+
+</html>
